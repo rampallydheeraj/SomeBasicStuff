@@ -1,0 +1,67 @@
+#include <stdio.h>
+
+int main(void) {
+	
+	
+	//string array vs pointer to a array of charecters
+	
+	char a[]="Hello";
+	
+	char *p="World";
+	
+	printf("%c\n",a[1]);
+	
+	
+	printf("%c\n",p[4]);
+	
+	
+	printf("%s\n",p);
+	
+	
+	
+
+	//pointer concepts
+	
+	int x=50;
+	
+	int *pointer_to_x;
+	
+	pointer_to_x = &x;
+	
+	
+	printf("%s\n", pointer_to_x);
+	
+	printf("%d\n", *pointer_to_x);
+	
+	printf("%x\n",&x);
+	
+	
+
+	//concept of void pointer
+	
+	int i; char c; 
+	void *the_data;
+	
+	
+	i=7;
+	c='a';
+	
+	
+	the_data=&i;
+	
+	printf("%d",*(int *)the_data);
+	
+	
+	return 0;
+
+}
+
+/****Output*****
+e
+d
+World
+2
+50
+bf964b4c
+7
+*****/
